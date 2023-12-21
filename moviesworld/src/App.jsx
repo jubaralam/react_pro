@@ -1,15 +1,11 @@
 import React from 'react'
-import './App.css'
-import Card from './Components/Card'
-import GetData from './Components/GetData'
+import Navbar from './Components/Navbar/Navbar'
+import Movies from './Components/Movies/Movies'
 const App = () => {
   return (
-    <div className='flex flex-row flex-wrap justify-center'>
-<GetData />
-  <Card />
-  <Card />
-  <Card />
-  <Card />
+    <div>
+      <Navbar />
+      <Movies />
     </div>
   )
 }

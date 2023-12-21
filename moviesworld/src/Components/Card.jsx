@@ -1,32 +1,10 @@
 import React from 'react'
 
 
-import axios from 'axios'
-
-const options = {
-  method: 'GET',
-  url: 'https://unogs-unogs-v1.p.rapidapi.com/search/titles',
-  params: {
-    order_by: 'date',
-    type: 'movie'
-  },
-  headers: {
-    'X-RapidAPI-Key': 'c425e565a6mshef81c55ff3345f9p196113jsn6d9243beec22',
-    'X-RapidAPI-Host': 'unogs-unogs-v1.p.rapidapi.com'
-  }
-};
-
-const res = async ()=>{
-  const resData = await axios(options)
-  console.log(resData.data)
-}
-res()
-// try {
-// 	const response = await axios.request(options);
-// 	console.log(response.data);
-// } catch (error) {
-// 	console.error(error);
-// }
+//color Code
+//blue #227fb4
+//gray #
+// light-gray #9ca3af
 const Card = () => {
   return (
     <div className='flex flex-col w-[180px] justify-center m-2 shadow-lg text-center pb-5
